@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kummo | Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Branding Kummo */
+      --bg-main: #0f0f0f;
+      --bg-card: #161616;
+      --accent: #c6a76d; /* dorado suave */
+      --text-main: #f2f2f2;
+      --text-muted: #a0a0a0;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(180deg, #0c0c0c, #141414);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 14px;
+      border-radius: 28px;
+      background: var(--bg-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,.5);
+    }
+
+    .logo img {
+      width: 80%;
+      height: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      margin: 8px 0 26px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .links a {
+      display: block;
+      background: var(--bg-card);
+      color: var(--text-main);
+      padding: 16px;
+      margin-bottom: 14px;
+      text-decoration: none;
+      border-radius: 16px;
+      font-weight: 600;
+      border: 1px solid #1f1f1f;
+      transition: all 0.25s ease;
+    }
+
+    .links a.primary {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .links a:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    }
+
+    footer {
+      margin-top: 26px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+      
+    /* Responsive ajustes */
+    @media (min-width: 768px) {
+      body {
+        padding: 40px;
+      }
+
+      .container {
+        max-width: 480px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .links a {
+        padding: 18px;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .logo {
+        width: 90px;
+        height: 90px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .links a {
+        padding: 14px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="logo">
+      <img src="KUMMO LOGO.jpg" alt="Kummo Logo" />
+    </div>
+
+    <h1>Kummo Store</h1>
+    <p>Perfumería árabe · Lentes · Lifestyle</p>
+
+    <div class="links">
+      <a class="primary" href="https://wa.me/5492914606940" target="_blank">💬 WhatsApp</a>
+      <a href="https://tutiendanube.com" target="_blank">🛍️ Tienda Online</a>
+      <a href="https://www.canva.com/design/DAG1at0807E/KDyybSZZdXRyF_XZUGkr4Q/view" target="_blank">📖 Catálogo Interactivo</a>
+      <a href="https://www.tiktok.com/@kummo_store" target="_blank">🎵 TikTok</a>
+    </div>
+
+    <footer>
+      © 2025 Kummo
+    </footer>
+
+  </div>
+</body>
+</html>
