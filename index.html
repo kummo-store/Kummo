@@ -2,13 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <title>Kummo Store | Links Oficiales</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Enlaces oficiales de Kummo Store: perfumes originales, lentes y estilo de vida. Contáctanos por WhatsApp o visita nuestra tienda." />
-  <meta property="og:title" content="Kummo Store | Enlaces Oficiales" />
-  <meta property="og:description" content="Descubre nuestros productos en perfumes, lentes y más." />
-  <meta property="og:image" content="C:\Users\Franc\Desktop\Info Todo los chiches\Kummo\KUMMO LOGO.jpg" /> <!-- Añade la URL real de la imagen -->
+  <meta name="description" content="Enlaces oficiales de Kummo Store. Perfumes originales, lentes y lifestyle." />
 
-  <title>Kummo Store | Enlaces Oficiales</title>
+  <!-- Open Graph / WhatsApp / Instagram -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kummo Store" />
+  <meta property="og:description" content="Perfumes originales · Lentes · Lifestyle" />
+  <meta property="og:image" content="https://REEMPLAZAR-URL-DEL-LOGO.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:url" content="https://TU-DOMINIO-O-URL.com" />
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -60,7 +65,7 @@
     .logo img {
       width: 80%;
       height: auto;
-      loading: lazy; /* Mejora de rendimiento */
+      display: block;
     }
 
     h1 {
@@ -87,7 +92,6 @@
       font-weight: 600;
       border: 1px solid #1f1f1f;
       transition: all 0.25s ease;
-      aria-label: "Enlace a"; /* Añade aria-label personalizado */
     }
 
     .links a.primary {
@@ -108,27 +112,84 @@
       color: var(--text-muted);
     }
 
-    /* Media queries existentes */
+    @media (min-width: 768px) {
+      .container {
+        max-width: 480px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .links a {
+        padding: 18px;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .logo {
+        width: 90px;
+        height: 90px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+
+      .links a {
+        padding: 14px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <a href="https://kummostore.mitiendanube.com" class="logo" aria-label="Ir a la página principal de Kummo Store">
-      <img src="KUMMO-LOGO.jpg" alt="Logo de Kummo Store - Perfumes, Lentes y Estilo de Vida" />
-    </a>
+
+    <div class="logo">
+      <img src="KUMMO-LOGO.jpg" alt="Logo de Kummo Store" loading="lazy" />
+    </div>
 
     <h1>Kummo Store</h1>
     <p>Perfumes Originales · Lentes · Lifestyle</p>
+
     <div class="links">
-      <a class="primary" href="https://wa.me/5492914606940" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">💬 WhatsApp</a>
-      <a href="https://kummostore.mitiendanube.com" target="_blank" rel="noopener noreferrer" aria-label="Visitar la Tienda Nube de Kummo">🛍️ Tienda Nube</a>
-      <a href="https://www.canva.com/design/DAG1at0807E/KDyybSZZdXRyF_XZUGkr4Q/view" target="_blank" rel="noopener noreferrer" aria-label="Ver el Catálogo Interactivo de Kummo">📖 Catálogo Interactivo</a>
-      <a href="https://www.instagram.com/kummo_store" target="_blank" rel="noopener noreferrer" aria-label="Seguir a Kummo en Instagram">📸 Instagram</a>
-      <a href="https://www.tiktok.com/@kummo_store" target="_blank" rel="noopener noreferrer" aria-label="Seguir a Kummo en TikTok">🎵 TikTok</a>
+      <a class="primary" href="https://wa.me/5492914606940" target="_blank" rel="noopener noreferrer">
+        💬 WhatsApp
+      </a>
+
+     <a href="https://kummostore.mitiendanube.com" target="_blank" rel="noopener noreferrer">
+        🛍️ Tienda Online
+      </a>
+      
+      <a href="https://www.canva.com/design/DAG1at0807E/KDyybSZZdXRyF_XZUGkr4Q/view" target="_blank" rel="noopener noreferrer">
+        📖 Catálogo Interactivo
+      </a>
+
+      <a href="https://www.instagram.com/kummo_store" target="_blank" rel="noopener noreferrer">
+        📸 Instagram
+      </a>
+
+      <a href="https://www.tiktok.com/@kummo_store" target="_blank" rel="noopener noreferrer">
+        🎵 TikTok
+      </a>
     </div>
+
     <footer>
-      © 2026  Kummo
+      © 2026 Kummo
     </footer>
+
   </div>
 </body>
 </html>
